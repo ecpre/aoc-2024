@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"strconv"
 	"os"
-	_"strings"
 	"bufio"
 	"regexp"
 )
@@ -20,8 +19,6 @@ func main() {
 
 	scanner.Split(bufio.ScanLines)
 	cont := ""
-
-	//var instructions []string
 
 	for scanner.Scan() {
 		cont += scanner.Text()	
