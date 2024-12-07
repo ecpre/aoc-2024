@@ -1,4 +1,4 @@
-import sys, time
+import sys
 
 if len(sys.argv) < 2:
     print("must have an argument")
