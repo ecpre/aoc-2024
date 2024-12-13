@@ -7,6 +7,8 @@ if len(sys.argv) < 2:
 
 ifile = open(sys.argv[1], 'r')
 
+count = int(sys.argv[2])
+
 line = ifile.readline()
 linecontent = line.strip()
 
@@ -20,7 +22,7 @@ i = 0
 stonemap = {}
 
 print(stones)
-while i < 75:
+while i < count:
     newstonedict = stonedict.copy()
     for stone, freq in stonedict.items():
         if freq == 0:
@@ -49,19 +51,3 @@ while i < 75:
 
 filtered = {key: value for key, value in stonedict.items() if value!= 0}
 print(str(sum(filtered.values())))
-
-    #while j < len(stones):
-    #    stone = stones[j]
-    #    if stone == "0":
-    #        newstones.append("1")
-    #    elif len(stone) % 2 == 0:
-    #        leftstone = stone[0:len(stone)//2]
-    #        rightstone = str(int(stone[len(stone)//2:]))
-    #        newstones.append(leftstone)
-    #        newstones.append(rightstone)
-    #    else:
-    #        newstones.append(str(int(stone)*2024))
-    #    j+=1
-    #i+=1
-    #print(i)
-    #stones = newstones
