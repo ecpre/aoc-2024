@@ -2,7 +2,7 @@ import sys
 
 if len(sys.argv) < 2:
     print("must have an argument")
-    exit
+    exit()
 
 ifile = open(sys.argv[1], 'r')
 additional = 0
