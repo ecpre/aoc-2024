@@ -43,6 +43,6 @@ while True:
         designs.append(linecontent)
     totalmeans += validated
     
-print(len(designs))
-print(totalmeans)
+print("Part 1: " + str(len(designs)))
+print("Part 2: " + str(totalmeans))
 
