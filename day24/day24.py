@@ -67,9 +67,7 @@ for key, value in inputs.items():
     elif key[0] == "y":
         binaryy+=str(value)
 
-true = int(binaryz[::-1],2)
-print(true)
-
+binzdec = int(binaryz[::-1],2)
 expected = int(binaryx[::-1],2)+int(binaryy[::-1],2)
 
 expectedstr = str(bin(expected))[::-1][:-2]
@@ -100,4 +98,6 @@ for i in range(len(expectedstr)):
 
         print_prev(zstr, 5)
 
+
+print("Part 1: ", binzdec)
 
